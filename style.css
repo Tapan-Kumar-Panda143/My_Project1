@@ -1,0 +1,942 @@
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    background-color: lightcyan;
+}
+
+html {
+
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 105vh;
+    padding-top: 20px;
+}
+
+/*********************************************       Responsive Design          ***********************************************************************/
+ .toggle{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    background: #2b669a;
+    color: white;
+    font-size: 30px;
+    display: none;
+
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        display: block;
+    }
+
+.main-nav ul{
+    width: 100%;
+
+}
+.main-nav ul li{
+    display: block ;
+    text-align: center;
+}
+.active{
+    display: block;
+}
+
+}
+
+/*********************************************       Nav Section       ***********************************************************************/
+.white{
+    height: 90px;
+    width: 90px;
+}
+.nav ul li a .white:hover{
+    background-color: white;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 3px;
+    position: absolute;
+    transition: all 0.3s;
+    background: white;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav ul li {
+    display: flex;
+}
+
+.nav ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1em;
+    padding: 0.25rem 0;
+    margin: 10px 1.80rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav ul li {
+    display: flex;
+}
+
+.nav ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.0em;
+    padding: 0.25rem 0;
+    margin: 10px 1.80rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.nav ul li a:hover{
+    background-color: #b41249;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*********************************************         Video           ***********************************************************************/
+
+video#herovideo {
+    width: 100%;
+}
+
+.bx-wrapper .social-icons a {
+    color: white;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: inherit;
+    text-align: center;
+    padding-top: 5px;
+    transition: all ease 1s;
+    background: #000000;
+    border-radius: 0;
+}
+
+.bx-wrapper .social-icons a i {
+    position: relative;
+    border-top: 7px;
+}
+
+.vidContent {
+    position: absolute;
+    top: 290px;
+    color: #f3f1f1;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    margin-left: 200px;
+}
+
+.vidContent h1 {
+    font-family: 'Oswald', Sans-Serif, serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.vidContent h3 {
+    font-family: 'Roboto Condensed', Sans-Serif, serif;
+    color: white;
+    margin-left: 200px;
+    font-weight: bold;
+}
+
+#vidBtn,
+#vidBtn1,
+#vidBtn2 {
+    font-family: 'Roboto Condensed', Sans-Serif, serif;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 40px;
+    border: none;
+    background: rosybrown;
+    color: black;
+    cursor: pointer;
+    margin-top: 18px;
+    border-radius: 50px;
+    animation: shadow-pulse 2s infinite;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 14px rgba(0, 0, 0, 0.2);
+    }
+}
+
+#vidBtn:hover {
+    background: violet;
+    color: white;
+}
+
+
+/***********************************************   SALIENT FEATURES         **********************************************************/
+
+#about-us .carousel-indicators {
+    position: static;
+    padding-top: 10px;
+}
+
+#about-us .carousel-indicators li {
+    background-color: black;
+    width: 12px;
+    height: 12px;
+    margin-left: 15px;
+}
+
+#about-us .carousel-control-next,
+#about-us .carousel-control-next {
+    width: auto;
+}
+
+#about-us .carousel-control-next {
+    right: -155px;
+}
+
+#about-us .carousel-control-prev {
+    left: -200px;
+}
+
+#about-us h3 {
+    font-family: 'Oswald', Sans-Serif, serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    color: #b41249!important;
+}
+
+p.lead {
+    font-family: Sans-Serif, serif;
+    font-size: 14px;
+    color: indianred!important;
+    font-weight: bold;
+}
+
+h4.text-dark {
+    font-family: 'Oswald', Sans-Serif, serif;
+    font-size: 21px;
+}
+
+p.text-secondary {
+    font-family: Sans-Serif, serif;
+    color: gray;
+}
+
+
+/****************************************    OUR PROGRAM Section         **********************************************************/
+
+.grid-gallery h2 {
+    font-family: 'Oswald', Sans-Serif, serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: brown !important;
+}
+
+.grid-gallery p {
+    text-align: center;
+}
+
+.gallery-block.grid-gallery {
+    padding-bottom: 60px;
+    padding-top: 0;
+}
+
+.gallery-block.grid-gallery .heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block.grid-gallery .heading h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.grid-gallery a:hover {
+    opacity: 0.8;
+}
+
+.gallery-block.grid-gallery .item img {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+
+.gallery-block.grid-gallery .item {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+    .gallery-block.grid-gallery .scale-on-hover:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+}
+
+
+/****************************************    Team Member          **********************************************************/
+
+.body1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #212121;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img1/church_in_stanford-wallpaper-1920x1080.jpg");
+    padding-top: 130px;
+    padding-bottom: 130px;
+    height: 790px;
+    background-attachment: fixed;
+}
+
+.box {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.card:before,
+.card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.card:hover:before {
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+
+.card:hover:after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+
+.card .img1Bx {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card:hover .img1Bx {
+    bottom: 140px;
+}
+
+.card .img1Bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 100px;
+    text-align: center;
+}
+
+.card .details h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.card .details h2 span {
+    font-weight: 900;
+    font-size: 20px;
+    color: #f38695;
+    display: block;
+    margin-top: 5px;
+    font-family: Algerian, serif;
+}
+
+.card.sm {
+    margin: 20px 0;
+}
+
+.card.sm a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+    margin-top: 17px;
+}
+
+.card.sm a:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+.card.card:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.details .sm .fa-youtube {
+    margin: 10px;
+    color: red;
+    font-size: 39px;
+}
+
+.details .sm .fa-facebook {
+    margin: 10px;
+    color: royalblue;
+    font-size: 39px;
+}
+
+.details .sm .fa-twitter {
+    margin: 10px;
+    color: deepskyblue;
+    font-size: 39px;
+}
+
+.details .sm .fa-instagram {
+    margin: 10px;
+    color: red;
+    border-radius: 50px;
+    font-size: 39px;
+}
+
+.details .sm .fa-github {
+    margin: 10px;
+    color: black;
+    border-radius: 50px;
+    font-size: 39px;
+}
+
+.details .sm .fa-google-plus-g {
+    margin: 10px;
+    color: dodgerblue;
+    border-radius: 50px;
+    font-size: 39px;
+}
+
+/*************************************************** Add a Bottom to top button **************************************************/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*******************************  New Update Section Start     ********************************************/
+
+.services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img1/underwater_bedroom-wallpaper-1920x1080.jpg");
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-attachment: fixed;
+    height: 410px;
+}
+
+.services h2 {
+    font-family: 'oswald', SansSerif, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services p {
+    font-family: 'oswald', SansSerif, sans-serif;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services a {
+    padding: 15px 30px;
+    background: transparent;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'oswald', SansSerif, sans-serif;
+    color: white;
+    font-size: 13px;
+    transition: all 0.5s ease-in;
+    border: 2px solid white;
+    letter-spacing: 1px;
+}
+
+.services a:hover {
+    padding: 15px 30px;
+    background: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'oswald', SansSerif, sans-serif;
+    letter-spacing: 4px;
+    color: black;
+    font-size: 13px;
+}
+
+
+/********************************************** work Images Section *******************************************/
+
+#work {
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #535353;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+h5 {
+    color: #b41249;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#work h2 {
+    font-size: 2.3rem;
+    color: black;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+#work p.description {
+    max-width: 950px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+
+/*************************************  Counter Section  ************************************************/
+
+.numbers {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img1/gallery/testimonial-background-3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: 900;
+    padding-top: 140px;
+    padding-bottom: 150px;
+    font-family: 'Oswald', sans-serif;
+    height: 600px;
+}
+
+.color-fff {
+    color: white;
+}
+
+.fa-35 {
+    font-size: 70px;
+}
+
+.fw-700 {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.color-aaa {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white !important;
+    letter-spacing: 2px;
+}
+
+.numbers .fa {
+    font-size: 50px;
+}
+
+
+/********************************************* Footer Section   **************************************************************/
+
+.form-control {
+    width: 500px;
+}
+
+.btn-general {
+    margin-left: 380px;
+}
+
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("img2/foot.jpg");
+    padding-top: 30px;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+    height: 650px;
+    margin-bottom: 0;
+}
+
+#contact-left h3,
+#contact-right h3 {
+    color: white !important;
+    font-synthesis: 27px;
+    font-weight: 400;
+}
+
+#contact-left p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+address {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+address strong {
+    font-size: 17px;
+}
+
+form .form-control {
+    background: transparent;
+    border-radius: 0;
+    border-color: white;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 17px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+/* ------------------- Main Footer ------------------- */
+
+.main-footer {
+    border-color: black;
+    text-align: center;
+    color: white;
+    padding: 12px;
+    height: 140px;
+}
+
+.main-footer a {
+    color: yellow;
+}
+
+/**********************************************     Google Maps            ***************************************************************************/
+.googlemaps {
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.mapshead {
+    text-align: center;
+    background-color: #b41249;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+/*****************************  Social icon in footer        **********************************************/
+
+.body2 {
+    margin-left: 0;
+    margin-top: 150px;
+}
+
+.body2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.body2 ul li {
+    margin: 0 40px;
+}
+
+.body2 ul li a .fab {
+    font-size: 40px;
+    color: #555;
+    line-height: 80px;
+    transition: 0.5s;
+}
+
+.body2 ul li a {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.body2 ul li a::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b2b2b2;
+    transition: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.body2 ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #e5e5e5;
+    transition: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+.body2 ul li a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.body2 ul li:hover .fab {
+    color: #fff;
+}
+
+.body2 ul li:hover:nth-child(1) a {
+    background-color: dodgerblue;
+}
+
+.body2 ul li:hover:nth-child(1) a::before {
+    background-color: deepskyblue;
+}
+
+.body2 ul li:hover:nth-child(1) a::after {
+    background-color: #4e69a3;
+}
+
+.body2 ul li:hover:nth-child(2) a {
+    background-color: black;
+}
+
+.body2 ul li:hover:nth-child(2) a::before {
+    background-color: darkgray;
+}
+
+.body2 ul li:hover:nth-child(2) a::after {
+    background-color: darkslategray;
+}
+
+.body2 ul li:hover:nth-child(3) a {
+    background-color: blue;
+}
+
+.body2 ul li:hover:nth-child(3) a::before {
+    background-color: lightskyblue;
+}
+
+.body2 ul li:hover:nth-child(3) a::after {
+    background-color: royalblue;
+}
+
+
+
+/**********************************************     Testimonials           ***********************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+
+.testimonials1 {
+    padding: 40px 0;
+    background: lightcyan;
+    color: #434343;
+    text-align: center;
+}
+
+.testimonials1 .inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.testimonials1 .border {
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+
+.testimonials1 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonials1 .col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial2 {
+    background: #fff;
+    padding: 30px;
+}
+
+.testimonial2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+}
+
+.testimonial2 .name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.testimonial2 .stars {
+    color: #6ab04c;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:960px) {
+    .col {
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.testimonial2 .fa-facebook{
+    margin: 10px;
+    font-size: 39px;
+    color: blue;
+}
+
+.testimonial2 .fa-youtube{
+    margin: 10px;
+    font-size: 39px;
+    color: red;
+}
+
+.testimonial2 .fa-twitter{
+    margin: 10px;
+    font-size: 39px;
+    color: deepskyblue;
+}
+
+.testimonial2 .fa-instagram{
+    margin: 10px;
+    font-size: 39px;
+    color: orangered;
+}
